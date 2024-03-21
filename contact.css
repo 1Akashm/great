@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url(./assets/Bg.jpg);
+    position: relative;
+    font-family: 'Inter';
+}
+
+
+
+.about_mbl{
+    display: none;
+}
+
+
+.arrow {
+    width: 16px; 
+    height: 16px;
+    margin-right: 5px; 
+    display: none; 
+  }
+
+  .fontactivate .arrow {
+    display: inline-block; 
+  }
+
+.nav_container
+{
+    display: flex;
+    /* gap: 185px; */
+    justify-content: space-between;
+    margin: 44px 0 0 20px;
+    flex-wrap: wrap;
+}
+
+.group262
+{   
+    position: absolute;
+    top: -40px;
+    z-index: -1;
+}
+
+.logo{
+    width: 150px;
+    height: 52px;
+}
+
+.logo>img{
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger
+{
+    width: 63px;
+    height: 31px;
+}
+
+.hamburger>button{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-right: 4px;
+}
+
+.ham{
+    width: 100%;
+    height: 100%;
+}
+
+.fontactivate{
+    font-weight: 700;
+}
+
+
+.nav_items ul li{
+    list-style: none;
+}
+
+.nav_items ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    line-height: 30.26px;
+}
+
+.ul_container {
+    
+    margin-top: 0;
+    transition: margin-top 0.5s ease;
+  }
+
+  .ul_container.with-margin {
+    margin-top: 117px; /* Updated margin-top value when link is not Home */
+  }
+
+  .ul_container.with-nomargin{
+    margin-top: -117px;
+  }
+
+
+.nav_items
+{
+  display: none;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.active{
+    display: block;
+    width: 100%;
+    height: 120vh;
+    background-image: url(./assets/Bg.jpg);
+    position: absolute;
+    top: -45px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    z-index: 99;
+}
+
+.nav{
+    position: relative;
+}
+
+.shape_section.nav_section
+{
+    position: absolute;
+    top: 250px;
+}
+
+.active{
+    display: block;
+    opacity: 1;
+}
+
+.logo_nav>img{
+    width: 200px;
+    height: 70px;
+    margin-top: 91px;
+    margin-bottom: 40px;
+}
+
+.nav_items ul li{
+    margin-bottom: 29px;
+}
+
+.social_icons{
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 23px;
+    top: 54px;
+    display: none;
+ }
+
+ .social_icons svg
+ {
+    margin-right: 20px;
+ }
+
+ @media screen and (min-width:768px) {
+
+    .social_icons
+    {
+        display: block;
+    }
+    .hamburger{
+        position: relative;
+        right: 0;
+        top: 200px;
+        /* z-index: 9; */
+    }
+
+    .nav_container
+    {
+        margin: 0 0 92px 0;
+    }
+
+    .logo>img {
+        margin: 54px 0 0 20px;
+    }
+
+    .about_mbl{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 900px) {
+    .hamburger{
+        display: none;
+    }
+
+    .logo_nav
+    {
+        display: none;
+    }
+
+    .nav_items
+    {
+        position: absolute;
+        display: block;
+        opacity: 1;
+        right: 50px;
+    }
+
+    .ul_container
+    {
+        margin-top: 250px;
+    }
+
+    .nav_items ul li a
+    {
+        text-align: right;
+        font-size: 16px;
+
+    }
+
+    .nav_items ul li{
+        text-align: right;
+        margin-bottom: 0px;
+    }
+
+    .nav_section img
+    {
+        display: none;
+    }
+}
+
+/* main */
+
+main{
+    width: 90%;
+    margin: 63px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: -2;
+}
+
+.third_image{
+    position: absolute;
+    z-index: -1;
+    left: -15px;
+    top: 402px;
+}
+
+.third_image img{
+    width: 100%;
+    height: 450px;
+}
+
+.second_img img{
+    position: absolute;
+    max-width: 250px;
+    width: 80%;
+    z-index: -1;
+    right: 0px;
+    top: -30px;
+}
+
+.hero
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+p{
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+
+.talk{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.talk span{
+    border: none;
+    outline: none;
+    border-bottom: 4px solid rgba(64, 120, 192, 1);
+    border-radius: 2px;
+    padding-bottom: 5px;
+}
+
+.section{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.space{
+    margin-top: 10px;
+}
+
+.section2 .details{
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+input{
+    background: transparent;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+    color: rgba(10, 10, 10,0.7);
+    outline: none;
+}
+
+.details label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+textarea
+{
+    padding: 5px 0 0px;
+    text-align: left;
+    max-width: 80%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    color: rgba(10, 10, 10,0.7);
+    outline: none;
+    font-family: 'inter';
+}
+
+.send{
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #C4C4C4;
+    padding: 10px;
+    width: 35%;
+    min-width: 100px;
+}
+
+.sectionA{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.sectionA{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+@media screen and (min-width:768px) {
+    .hero
+    {
+        flex-direction: row;
+    }
+
+    .sectionA{
+        width: 35%;
+    }
+
+    .section
+    {
+        width: 100%;
+        border: none;
+    }
+
+    .section2
+    {
+        /* margin-left: 20px; */
+        margin-top: 30px;
+        border-left: 1px solid black;
+        padding-left: 50px;
+        width: 70%;
+    }
+
+    .details label{
+        font-size: 18px;
+        font-family: 'poppins';
+        font-weight: bold;
+    }
+
+    .details input{
+        width: 50%;
+    }
+
+    textarea{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:950px) {
+
+
+.hero
+{
+    width: 85%;
+}
+
+    .sectionA{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .section{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .space
+    {
+        width: 100%;
+    }
+
+    .section div
+    {
+        width: 100%;
+    }
+
+    .details input{
+        width: 80%;
+    }
+
+    textarea{
+        width: 80%;
+    }
+}
